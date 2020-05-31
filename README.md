@@ -22,19 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-## usersテーブル
-
-|Column|Type|Options|
-|------|----|-------|
-|email|string|null: false|
-|password|string|null: false|
-|nickname|string|null: false|
-### Association
-- has_many :group
-- has_many :comments
-
-
 ## groups_usersテーブル
 
 |Column|Type|Options|
@@ -43,8 +30,9 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belong_to :group
-- belong_to :user
+
+- belongs_to :group
+- belongs_to :user
 
 
 ## commentsテーブル
@@ -59,3 +47,6 @@ Things you may want to cover:
 ### Association
 - belong_to :user
 - belong_to :comments
+
+- belongs_to :group
+- belongs_to :user
