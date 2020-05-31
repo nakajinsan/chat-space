@@ -59,4 +59,3 @@ Things you may want to cover:
 ### Association
 - belong_to :user
 - belong_to :comments
-
