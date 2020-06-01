@@ -31,27 +31,27 @@ Things you may want to cover:
 |password|string|null: false|
 |nickname|string|null: false|
 ### Association
-- has_many :group
+- has_many :groups, through: :groups_users
 - has_many :comments
+- has_many :groups_users
 
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |title|text||
-|user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- has_many :group
-- has_many :user
+- has_many :users, through: :groups_users
+- belong_to :groups_users
+- has_many :comments
 
 
 ## groups_usersテーブル
-
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 
 ### Association
 - belong_to :group
@@ -64,9 +64,9 @@ Things you may want to cover:
 |------|----|-------|
 |body|text||
 |image|text||
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - belong_to :user
-- belong_to :comments
+- belong_to :groups
