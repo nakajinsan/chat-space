@@ -35,6 +35,17 @@ Things you may want to cover:
 - has_many :comments
 
 
+## groupsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|text||
+|user_id|integer|null: false, foreign_key: true|
+
+### Association
+- has_many :group
+- has_many :user
+
+
 ## groups_usersテーブル
 
 |Column|Type|Options|
