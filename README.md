@@ -46,6 +46,7 @@ Things you may want to cover:
 - belong_to :group
 - belong_to :user
 
+
 ## commentsテーブル
 
 |Column|Type|Options|
