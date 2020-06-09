@@ -1,0 +1,31 @@
+.chat-main
+  .chat-main__group-info
+    .info-box
+      .content__box
+        .content test
+      .content-member__box
+        .content-member Member: 
+        .content-member__list masa
+    .edit-btn 
+      =link_to '#',class: "edit" do 
+        Edit
+  .chat-main__message-list
+    .tweet
+      .tweet-name__box
+        .tweet-name masa
+        .carrender 2019/11/20(wed)17:43:01
+      .message__box
+        .message おはよう！
+    .tweet
+      .tweet-name__box
+        .tweet-name nakaji
+        .carrender 2019/11/20(wed)17:43:01
+      .message__box
+        .message ありがとう！！
+  .chat-main__message-form
+    .message-form 
+      %input.message{:type =>"text",:placeholder=>"type a message"}
+      %label{class:'icon-image'}
+        = icon('far','image')
+        %input{type:'file', class: 'text'}
+    %input.submit-btn{:type =>"submit",:value =>"Send",:name =>"commit"}

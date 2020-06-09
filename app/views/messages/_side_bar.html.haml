@@ -1,0 +1,23 @@
+.side-bar
+  .side-bar__user-name
+    .side-bar__box
+      .user-name masa
+      .icon-name 
+        =link_to '#', class: "icon-btn" do
+          = icon('far','edit') 
+          %span<>
+        =link_to '#', class: "icon-btn" do
+          = icon('fas','cog')
+          %span<> 
+  .side-bar__group-list
+    .group-list
+      .group-list__box
+        .group-name techcamp
+      .message-list__box
+        .message-top まだメッセージはありません
+    .group-list
+      .group-list__box
+        .group-name text
+      .message-list__box
+        .message-top これからメッセージがあります
+    

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  margin: 0;
+  padding: 0;
+  background-color:#ffffff;
+  .side-bar{
+    height: 100vh;
+    width: 300px;
+    background-color: #253141;
+    float: left;
+  }
+  .chat-main{
+    float: left;
+    width: calc(100vw - 300px);
+    background-color: pink;
+  }
+}
