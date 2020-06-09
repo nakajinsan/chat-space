@@ -1,0 +1,23 @@
+.side-bar__group-list{
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0;
+  .group-list{
+    height: 35px;
+    width: 260px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    .group-list__box{
+    height: 20px;
+    width: 260px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    }
+    .message-list__box{
+    height: 11px;
+    width: 260px;
+    line-height: 11px;
+    font-size: 11px;
+    }
+  }
+}

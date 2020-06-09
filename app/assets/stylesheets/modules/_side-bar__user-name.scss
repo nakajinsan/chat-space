@@ -1,0 +1,30 @@
+.side-bar__user-name{
+  height: 100px;
+  background-color: #253141;
+  display: flex;
+  align-items: center;
+  .side-bar__box{
+    height: 20px;
+    width: 260px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    .user-name{
+      color: #ffffff;
+    }
+    .icon-name{
+      color: #ffffff;
+      text-align: right;
+    }
+    .icon-btn{
+      color: #ffffff;
+      margin-left: 5px;
+      text-decoration: none;
+    }
+    
+  }
+}
+
