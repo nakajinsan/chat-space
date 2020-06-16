@@ -8,16 +8,16 @@
   overflow: scroll;
   .info-box{
     padding-top: 35px;
-  
+    width: 600px;
     .content__box{
       height: 20px;
-      width: 80px;
+      // width: 80px;
       color: #333333;
       line-height: 20px;
     }    
     .content-member__box{
       height: 12px;
-      width: 100px;
+      width: 500px;
       margin-top: 15px;
       font-size: 12px;
       line-height: 12px;

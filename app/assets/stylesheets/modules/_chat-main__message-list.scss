@@ -2,36 +2,43 @@
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
   padding: 35px 40px 0;
-  .tweet{
+  padding-bottom: 40px;
+  overflow: scroll;
+  .message{
     margin-bottom: 46px;
-    &-name__box {
+    .upper-message {
       height: 18px;
       margin-bottom: 12px;
-      .tweet-name{
+      .upper-message__user-name{
         line-height: 18px;
         height: 18px;
         font-weight: bold;
         float: left;
       }
-      .carrender{
+      .upper-message__date{
         font-size: 12px;
         color: #999999;
         float: left;
         margin-left: 15px;
       }
     }
-    &__box{
+    .lower-message{
       height: 16px;
       margin-bottom: 46px;
       font-size: 16px;
       color: #434a54;;
-      .message{
+      .lower-message__content{
         height: 16px;
-        width: 500px;
         font-size: 14px;
         line-height: 16px;
+        .lower-message__image{
+          .img{
+          width: 200px;
+          height: 200px;
+          }
+        }
       }
     }
   }
-  
-}
+} 
+
